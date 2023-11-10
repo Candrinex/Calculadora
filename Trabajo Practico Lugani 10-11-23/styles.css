@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 400px;
+    background: url('bobesponja.png') no-repeat center center fixed;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    font-family:'Times New Roman', Times, serif
+}
+
+.num, .operador, .calcular, .borrar, .operadorsum {
+    background-color: rgba(193, 183, 77, 0.7);
+    color: rgb(86, 27, 27);
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 22px;
+}
+
+.borrar {
+    grid-row: span 2; 
+    color: white;
+    background-color: rgba(0, 98, 255, 0.7);
+}
+
+.calcular {
+    background-color: rgba(159, 251, 193, 0.7);
+    color: rgb(86, 27, 27);
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    grid-column: span 4;
+}
+
+#limpiar {
+    border: none;
+    background-color: rgba(255, 0, 0, 0.7);
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#limpiar img{
+    width: 25px;
+}
+
+.calcular img{
+    width: 80px;
+}
+
+.borrar img{
+    width: 50px;
+}
+
+#display {
+    grid-column: span 4;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 24px;
+    text-align: right;
+}
+
+p{
+    grid-column: span 4;
+    font-size: 12px;
+}
